@@ -121,7 +121,7 @@ h6 {
 */
 
 [class*=__container] {
-  max-width: 110.625rem;
+  max-width: 76.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
@@ -151,10 +151,6 @@ h6 {
   top: 0;
   width: 100%;
   padding: 1.25rem 0;
-}
-
-.header__container {
-  max-width: 120rem;
 }
 
 .lang {
@@ -187,7 +183,6 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 700;
-  line-height: 1.2;
   color: #fff;
   letter-spacing: 1.08px;
   -webkit-transform: skew(7deg);
@@ -203,8 +198,8 @@ h6 {
 }
 
 .lang__current svg {
-  width: 1.6875rem;
-  height: 1.5625rem;
+  width: 0.75rem;
+  height: 0.75rem;
   -webkit-transform: skew(-7deg);
       -ms-transform: skew(-7deg);
           transform: skew(-7deg);
@@ -231,7 +226,7 @@ h6 {
   transition: opacity 0.3s, visibility 0.3s, height 0.5s, -webkit-transform 0.3s;
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s, height 0.5s;
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s, height 0.5s, -webkit-transform 0.3s;
-  margin: -3px -4px 0 4px;
+  margin: -3px -2.3px 0 2px;
   height: 0;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(3px);
@@ -398,7 +393,6 @@ h6 {
 }
 
 .footer__item-num {
-  max-width: 8.125rem;
   width: 100%;
 }
 
@@ -422,20 +416,20 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2.5rem;
+  gap: 1.25rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.75rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 25px;
 }
 
@@ -458,26 +452,26 @@ h6 {
   padding-top: 5rem;
 }
 
-.promo__container {
-  max-width: 120rem;
-}
-
 .promo__inner {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 0.625rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.promo__info {
+  position: relative;
+  z-index: 2;
 }
 
 .promo__title {
   font-weight: 900;
   letter-spacing: 2.7px;
   line-height: 1.4;
-  margin-right: -50%;
   position: relative;
   z-index: 2;
 }
@@ -501,28 +495,31 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #d40211;
-  padding: 1.25rem 0 1.25rem 3.125rem;
-  margin-left: -1.875rem;
-  max-width: 51.875rem;
+  padding: 0.625rem 0 0.625rem 1.875rem;
+  margin-left: -0.9375rem;
+  max-width: 35.625rem;
   font-weight: 700;
   letter-spacing: 0.99px;
   line-height: 1.3;
   position: relative;
-  padding-right: 1.25rem;
+  padding-right: 2.5rem;
+  z-index: 2;
 }
 
 .promo__text::after {
   content: "";
-  height: 100%;
-  width: 3.125rem;
+  display: block;
   background-color: #d40211;
+  height: 100%;
   position: absolute;
-  right: -30px;
+  right: -12px;
   top: 0;
   bottom: 0;
   -webkit-transform: skew(15deg);
       -ms-transform: skew(15deg);
           transform: skew(15deg);
+  z-index: -1;
+  width: 100%;
 }
 
 .promo__images {
@@ -540,11 +537,13 @@ h6 {
   height: 362px;
   bottom: -30%;
   right: 0;
+  z-index: 0;
 }
 
 .promo__img {
   max-width: 74.375rem;
   width: 100%;
+  position: relative;
 }
 
 .promo__img img {
@@ -564,8 +563,7 @@ h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 5rem;
-  right: 20%;
+  right: 10%;
 }
 
 .promo__block {
@@ -573,7 +571,7 @@ h6 {
   -webkit-transform: skew(10deg);
       -ms-transform: skew(10deg);
           transform: skew(10deg);
-  padding: 0.4375rem 2.5rem;
+  padding: 0.4375rem 1.875rem;
 }
 
 .promo__block:first-child {
@@ -598,10 +596,6 @@ h6 {
   color: #e0e0e0;
   line-height: 1.3;
   font-weight: 600;
-}
-
-.lessons__container {
-  max-width: 116.25rem;
 }
 
 .lessons__items {
@@ -639,7 +633,7 @@ h6 {
 
 .lessons__plus {
   text-align: center;
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: 3.84px;
 }
@@ -677,7 +671,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 11.875rem;
 }
 
 .lessons__subtext {
@@ -688,7 +681,7 @@ h6 {
 }
 
 .lesson__book {
-  max-width: 31.25rem;
+  max-width: 18.75rem;
 }
 
 .lesson__book img {
@@ -698,55 +691,41 @@ h6 {
      object-fit: cover;
 }
 
-@media (min-width: 47.99875em) {
-  .footer__link {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-}
-
-@media (min-width: 93.74875em) {
-  .promo__images {
-    margin-right: -8.75rem;
-  }
-}
-
-@media (min-width: 110.625em) {
+@media (min-width: 76.875em) {
   .lang__current {
-    font-size: 2.25rem;
+    font-size: 1.125rem;
   }
 
   .lang__list {
-    font-size: 2.25rem;
+    font-size: 1.125rem;
   }
 
   .footer {
-    padding-top: 4.375rem;
+    padding-top: 3.75rem;
   }
 
   .footer {
-    padding-bottom: 5rem;
+    padding-bottom: 4.375rem;
   }
 
   .footer__title {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   .footer__title span {
-    font-size: 5.5rem;
+    font-size: 2.75rem;
   }
 
   .footer__title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.875rem;
   }
 
   .footer__list {
-    margin-bottom: 6.875rem;
+    margin-bottom: 3.75rem;
   }
 
   .footer__list-item {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
   }
 
   .footer__list-item {
@@ -754,7 +733,7 @@ h6 {
   }
 
   .footer__list-item span {
-    font-size: 2.75rem;
+    font-size: 1.375rem;
   }
 
   .footer__list-item::before {
@@ -766,39 +745,39 @@ h6 {
   }
 
   .footer__subtitle {
-    font-size: 2.75rem;
+    font-size: 1.375rem;
   }
 
   .footer__subtitle {
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5rem;
   }
 
   .footer__items {
-    gap: 4.375rem;
+    gap: 2.1875rem;
   }
 
   .footer__items {
-    margin-bottom: 4.6875rem;
+    margin-bottom: 3.4375rem;
   }
 
   .footer__item-num {
-    max-width: 8.125rem;
+    max-width: 3.75rem;
   }
 
   .footer__item-text {
-    font-size: 2.0625rem;
+    font-size: 1.125rem;
   }
 
   .footer__links {
-    gap: 7.5rem;
+    gap: 3.75rem;
   }
 
   .footer__link {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
   }
 
   .footer__link svg {
-    max-width: 7.5rem;
+    max-width: 2.5rem;
   }
 
   .promo__info {
@@ -806,27 +785,35 @@ h6 {
   }
 
   .promo__title {
-    font-size: 5.375rem;
+    font-size: 2.6875rem;
   }
 
   .promo__title {
-    margin-bottom: 4.375rem;
+    margin-bottom: 3.125rem;
   }
 
   .promo__texts {
-    gap: 3.125rem;
+    gap: 1.875rem;
   }
 
   .promo__text {
-    font-size: 2.0625rem;
+    font-size: 1rem;
+  }
+
+  .promo__images {
+    margin-right: -4.6875rem;
+  }
+
+  .promo__blocks {
+    gap: 4.375rem;
   }
 
   .promo__block-name {
-    font-size: 1.625rem;
+    font-size: 1rem;
   }
 
   .promo__block-text {
-    font-size: 0.9375rem;
+    font-size: 0.625rem;
   }
 
   .lessons {
@@ -834,19 +821,19 @@ h6 {
   }
 
   .lessons__items {
-    margin-bottom: 3.4375rem;
+    margin-bottom: 2.8125rem;
   }
 
   .lessons__item-text {
-    font-size: 3.75rem;
+    font-size: 1.875rem;
   }
 
   .lessons__plus {
-    margin-bottom: 3.4375rem;
+    margin-bottom: 2.8125rem;
   }
 
   .lessons__subtitle {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   .lessons__subtitle {
@@ -854,29 +841,29 @@ h6 {
   }
 
   .lessons__subtitle img {
-    max-width: 16.25rem;
+    max-width: 8.125rem;
   }
 
   .lessons__books {
-    gap: 11.875rem;
+    gap: 5rem;
   }
 
   .lessons__books {
-    margin-bottom: 3.4375rem;
+    margin-bottom: 2.8125rem;
   }
 
   .lessons__subtext {
-    font-size: 3.125rem;
+    font-size: 1.5625rem;
   }
 }
 
 @media (max-width: 20em) {
   .lang__current {
-    font-size: 1.125rem;
+    font-size: 0.75rem;
   }
 
   .lang__list {
-    font-size: 1.125rem;
+    font-size: 0.75rem;
   }
 
   .footer {
@@ -940,7 +927,7 @@ h6 {
   }
 
   .footer__item-num {
-    max-width: 2.1875rem;
+    max-width: 1.5625rem;
   }
 
   .footer__item-text {
@@ -952,7 +939,7 @@ h6 {
   }
 
   .footer__link svg {
-    max-width: 1.875rem;
+    max-width: 1.25rem;
   }
 
   .promo__info {
@@ -975,10 +962,6 @@ h6 {
     font-size: 0.6875rem;
   }
 
-  .promo__images {
-    margin-right: 0.0000000625rem;
-  }
-
   .promo__block-name {
     font-size: 0.5625rem;
   }
@@ -995,12 +978,16 @@ h6 {
     margin-bottom: 1.25rem;
   }
 
+  .lessons__item-text {
+    font-size: 0.75rem;
+  }
+
   .lessons__plus {
     margin-bottom: 1.25rem;
   }
 
   .lessons__subtitle {
-    font-size: 1.375rem;
+    font-size: 1rem;
   }
 
   .lessons__subtitle {
@@ -1008,7 +995,7 @@ h6 {
   }
 
   .lessons__subtitle img {
-    max-width: 2.5rem;
+    max-width: 1.875rem;
   }
 
   .lessons__books {
@@ -1020,49 +1007,8 @@ h6 {
   }
 
   .lessons__subtext {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
-}
-
-@media (max-width: 93.74875em) {
-  .promo__inner {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .promo__title {
-    margin-right: 0;
-    max-width: 56.25rem;
-  }
-
-  .promo__text {
-    max-width: 100%;
-  }
-
-  .promo__images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .promo__images::before {
-    bottom: 50%;
-    right: 20%;
-    -webkit-filter: blur(190px);
-            filter: blur(190px);
-  }
-
-  .promo__img {
-    position: relative;
-  }
-}
-
-@media (max-width: 74.99875em) {
-  .no-webp .promo{
-    background: url("../img/bg-mob.png") top right/75% 55% no-repeat; }
 }
 
 @media (max-width: 61.99875em) {
@@ -1071,23 +1017,70 @@ h6 {
   }
 
   .footer__link {
-    gap: 0.9375rem;
+    gap: 0.625rem;
+  }
+
+  .promo__blocks {
+    gap: 1.25rem;
   }
 
   .lessons__items {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .lessons__item-text {
-    font-size: 1.875rem;
+@media (max-width: 56.24875em) {
+  .no-webp .promo{
+    background: url("../img/bg-mob.png") top right/75% 82% no-repeat; }
+
+  .promo__inner {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .promo__texts {
+    margin-right: -0.9375rem;
+  }
+
+  .promo__text {
+    padding: 0.625rem 1.25rem 0.625rem 2.5rem;
+    margin-left: 40px;
+    max-width: calc(100% - 40px);
+    text-align: center;
+  }
+
+  .promo__text::after {
+    content: "";
+    right: 0px;
+    left: -10px;
+    -webkit-transform: skew(-15deg);
+        -ms-transform: skew(-15deg);
+            transform: skew(-15deg);
+  }
+
+  .promo__images {
+    margin-right: 0.0000000625rem;
+  }
+
+  .promo__img {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .promo__blocks {
+    right: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (max-width: 47.99875em) {
   .lang__current svg {
-    width: 0.9375rem;
-    height: 0.9375rem;
+    width: 0.5625rem;
+    height: 0.5625rem;
   }
 
   .lang__list {
@@ -1107,54 +1100,14 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 25rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: 0 auto;
   }
 
   .no-webp .promo{
     background: url("../img/bg-mob.png") top right/75% 75% no-repeat; }
-
-  .promo__texts {
-    margin-right: -1.875rem;
-  }
-
-  .promo__text {
-    padding: 0.625rem 1.875rem 0.625rem 2.5rem;
-    margin-left: 40px;
-    max-width: calc(100% - 40px);
-  }
-
-  .promo__text::after {
-    content: "";
-    right: 0px;
-    left: -10px;
-    -webkit-transform: skew(-15deg);
-        -ms-transform: skew(-15deg);
-            transform: skew(-15deg);
-    width: 1.25rem;
-  }
-
-  .promo__images::before {
-    bottom: 10%;
-    right: 0;
-  }
-
-  .promo__img {
-    max-width: 70%;
-  }
-
-  .promo__blocks {
-    gap: 2.5rem;
-  }
 }
 
 @media (max-width: 40.62375em) {
-  .promo__blocks {
-    right: 25%;
-  }
-
   .promo__block {
     padding: 0.4375rem 1.25rem;
     margin-top: -1.25rem;
@@ -1174,13 +1127,6 @@ h6 {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 31.24875em) {
-  .promo__blocks {
-    right: 20%;
-    gap: 1.25rem;
   }
 }
 
@@ -1204,6 +1150,7 @@ h6 {
   .footer__item {
     max-width: 18.75rem;
     width: 100%;
+    gap: 0.9375rem;
   }
 
   .footer__item-text {
@@ -1212,24 +1159,18 @@ h6 {
   }
 
   .footer__link {
-    padding: 0.9375rem 0.5rem;
-    border-radius: 15px;
+    padding: 0.9375rem;
+    border-radius: 8px;
   }
 
   .promo__text {
     font-weight: 600;
-    padding: 0.625rem 1.875rem 0.625rem 0.9375rem;
+    padding: 0.3125rem 1.875rem 0.3125rem 0.9375rem;
     margin-left: 10px;
     max-width: calc(100% - 10px);
-    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .promo__images::before {
-    bottom: 0;
-    left: 20%;
   }
 
   .promo__block-name {
@@ -1250,511 +1191,515 @@ h6 {
   .lessons__subtext {
     font-weight: 700;
   }
-}
 
-@media (max-width: 24.99875em) {
-  .promo__blocks {
-    right: 12%;
+  .lesson__book {
+    max-width: 13.75rem;
   }
 }
 
-@media (max-width: 21.24875em) {
-  .promo__blocks {
-    right: 10%;
-  }
-}
-
-@media (min-width: 20em) and (max-width: 110.625em) {
-@supports (font-size: clamp( 1.125rem , 0.8767241379rem  +  1.2413793103vw , 2.25rem )) {
+@media (min-width: 20em) and (max-width: 76.875em) {
+@supports (font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem )) {
     .lang__current {
-      font-size: clamp( 1.125rem , 0.8767241379rem  +  1.2413793103vw , 2.25rem );
+      font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , 0.8767241379rem  +  1.2413793103vw , 2.25rem )) {
+@supports not (font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem )) {
     .lang__current {
-      font-size: calc(1.125rem + 1.125 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.75rem + 0.375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 1.125rem , 0.8767241379rem  +  1.2413793103vw , 2.25rem )) {
+@supports (font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem )) {
     .lang__list {
-      font-size: clamp( 1.125rem , 0.8767241379rem  +  1.2413793103vw , 2.25rem );
+      font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , 0.8767241379rem  +  1.2413793103vw , 2.25rem )) {
+@supports not (font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem )) {
     .lang__list {
-      font-size: calc(1.125rem + 1.125 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.75rem + 0.375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (padding-top: clamp( 1.25rem , 0.5603448276rem  +  3.4482758621vw , 4.375rem )) {
+@supports (padding-top: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem )) {
     .footer {
-      padding-top: clamp( 1.25rem , 0.5603448276rem  +  3.4482758621vw , 4.375rem );
+      padding-top: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem );
     }
 }
 
-@supports not (padding-top: clamp( 1.25rem , 0.5603448276rem  +  3.4482758621vw , 4.375rem )) {
+@supports not (padding-top: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem )) {
     .footer {
-      padding-top: calc(1.25rem + 3.125 * (100vw - 20rem) / 90.625);
+      padding-top: calc(1.25rem + 2.5 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (padding-bottom: clamp( 1.875rem , 1.1853448276rem  +  3.4482758621vw , 5rem )) {
+@supports (padding-bottom: clamp( 1.875rem , 0.9958791209rem  +  4.3956043956vw , 4.375rem )) {
     .footer {
-      padding-bottom: clamp( 1.875rem , 1.1853448276rem  +  3.4482758621vw , 5rem );
+      padding-bottom: clamp( 1.875rem , 0.9958791209rem  +  4.3956043956vw , 4.375rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 1.875rem , 1.1853448276rem  +  3.4482758621vw , 5rem )) {
+@supports not (padding-bottom: clamp( 1.875rem , 0.9958791209rem  +  4.3956043956vw , 4.375rem )) {
     .footer {
-      padding-bottom: calc(1.875rem + 3.125 * (100vw - 20rem) / 90.625);
+      padding-bottom: calc(1.875rem + 2.5 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.8125rem , -0.111637931rem  +  4.6206896552vw , 5rem )) {
+@supports (font-size: clamp( 0.8125rem , 0.2190934066rem  +  2.967032967vw , 2.5rem )) {
     .footer__title {
-      font-size: clamp( 0.8125rem , -0.111637931rem  +  4.6206896552vw , 5rem );
+      font-size: clamp( 0.8125rem , 0.2190934066rem  +  2.967032967vw , 2.5rem );
     }
 }
 
-@supports not (font-size: clamp( 0.8125rem , -0.111637931rem  +  4.6206896552vw , 5rem )) {
+@supports not (font-size: clamp( 0.8125rem , 0.2190934066rem  +  2.967032967vw , 2.5rem )) {
     .footer__title {
-      font-size: calc(0.8125rem + 4.1875 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.8125rem + 1.6875 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.8125rem , -0.2219827586rem  +  5.1724137931vw , 5.5rem )) {
+@supports (font-size: clamp( 0.8125rem , 0.1311813187rem  +  3.4065934066vw , 2.75rem )) {
     .footer__title span {
-      font-size: clamp( 0.8125rem , -0.2219827586rem  +  5.1724137931vw , 5.5rem );
+      font-size: clamp( 0.8125rem , 0.1311813187rem  +  3.4065934066vw , 2.75rem );
     }
 }
 
-@supports not (font-size: clamp( 0.8125rem , -0.2219827586rem  +  5.1724137931vw , 5.5rem )) {
+@supports not (font-size: clamp( 0.8125rem , 0.1311813187rem  +  3.4065934066vw , 2.75rem )) {
     .footer__title span {
-      font-size: calc(0.8125rem + 4.6875 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.8125rem + 1.9375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 0.5rem , 0.0586206897rem  +  2.2068965517vw , 2.5rem )) {
+@supports (margin-bottom: clamp( 0.5rem , 0.0164835165rem  +  2.4175824176vw , 1.875rem )) {
     .footer__title {
-      margin-bottom: clamp( 0.5rem , 0.0586206897rem  +  2.2068965517vw , 2.5rem );
+      margin-bottom: clamp( 0.5rem , 0.0164835165rem  +  2.4175824176vw , 1.875rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 0.5rem , 0.0586206897rem  +  2.2068965517vw , 2.5rem )) {
+@supports not (margin-bottom: clamp( 0.5rem , 0.0164835165rem  +  2.4175824176vw , 1.875rem )) {
     .footer__title {
-      margin-bottom: calc(0.5rem + 2 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(0.5rem + 1.375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.0086206897rem  +  6.2068965517vw , 6.875rem )) {
+@supports (margin-bottom: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem )) {
     .footer__list {
-      margin-bottom: clamp( 1.25rem , 0.0086206897rem  +  6.2068965517vw , 6.875rem );
+      margin-bottom: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 0.0086206897rem  +  6.2068965517vw , 6.875rem )) {
+@supports not (margin-bottom: clamp( 1.25rem , 0.3708791209rem  +  4.3956043956vw , 3.75rem )) {
     .footer__list {
-      margin-bottom: calc(1.25rem + 5.625 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(1.25rem + 2.5 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.5625rem , 0.1349137931rem  +  2.1379310345vw , 2.5rem )) {
+@supports (font-size: clamp( 0.5625rem , 0.3207417582rem  +  1.2087912088vw , 1.25rem )) {
     .footer__list-item {
-      font-size: clamp( 0.5625rem , 0.1349137931rem  +  2.1379310345vw , 2.5rem );
+      font-size: clamp( 0.5625rem , 0.3207417582rem  +  1.2087912088vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 0.5625rem , 0.1349137931rem  +  2.1379310345vw , 2.5rem )) {
+@supports not (font-size: clamp( 0.5625rem , 0.3207417582rem  +  1.2087912088vw , 1.25rem )) {
     .footer__list-item {
-      font-size: calc(0.5625rem + 1.9375 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.5625rem + 0.6875 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (padding-left: clamp( 0.9375rem , 0.5926724138rem  +  1.724137931vw , 2.5rem )) {
+@supports (padding-left: clamp( 0.9375rem , 0.3880494505rem  +  2.7472527473vw , 2.5rem )) {
     .footer__list-item {
-      padding-left: clamp( 0.9375rem , 0.5926724138rem  +  1.724137931vw , 2.5rem );
+      padding-left: clamp( 0.9375rem , 0.3880494505rem  +  2.7472527473vw , 2.5rem );
     }
 }
 
-@supports not (padding-left: clamp( 0.9375rem , 0.5926724138rem  +  1.724137931vw , 2.5rem )) {
+@supports not (padding-left: clamp( 0.9375rem , 0.3880494505rem  +  2.7472527473vw , 2.5rem )) {
     .footer__list-item {
-      padding-left: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 90.625);
+      padding-left: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.625rem , 0.1560344828rem  +  2.3448275862vw , 2.75rem )) {
+@supports (font-size: clamp( 0.625rem , 0.3612637363rem  +  1.3186813187vw , 1.375rem )) {
     .footer__list-item span {
-      font-size: clamp( 0.625rem , 0.1560344828rem  +  2.3448275862vw , 2.75rem );
+      font-size: clamp( 0.625rem , 0.3612637363rem  +  1.3186813187vw , 1.375rem );
     }
 }
 
-@supports not (font-size: clamp( 0.625rem , 0.1560344828rem  +  2.3448275862vw , 2.75rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.3612637363rem  +  1.3186813187vw , 1.375rem )) {
     .footer__list-item span {
-      font-size: calc(0.625rem + 2.125 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.625rem + 0.75 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (width: clamp( 0.3125rem , 0.1056034483rem  +  1.0344827586vw , 1.25rem )) {
+@supports (width: clamp( 0.3125rem , -0.0171703297rem  +  1.6483516484vw , 1.25rem )) {
     .footer__list-item::before {
-      width: clamp( 0.3125rem , 0.1056034483rem  +  1.0344827586vw , 1.25rem );
+      width: clamp( 0.3125rem , -0.0171703297rem  +  1.6483516484vw , 1.25rem );
     }
 }
 
-@supports not (width: clamp( 0.3125rem , 0.1056034483rem  +  1.0344827586vw , 1.25rem )) {
+@supports not (width: clamp( 0.3125rem , -0.0171703297rem  +  1.6483516484vw , 1.25rem )) {
     .footer__list-item::before {
-      width: calc(0.3125rem + 0.9375 * (100vw - 20rem) / 90.625);
+      width: calc(0.3125rem + 0.9375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (height: clamp( 0.3125rem , 0.1056034483rem  +  1.0344827586vw , 1.25rem )) {
+@supports (height: clamp( 0.3125rem , -0.0171703297rem  +  1.6483516484vw , 1.25rem )) {
     .footer__list-item::before {
-      height: clamp( 0.3125rem , 0.1056034483rem  +  1.0344827586vw , 1.25rem );
+      height: clamp( 0.3125rem , -0.0171703297rem  +  1.6483516484vw , 1.25rem );
     }
 }
 
-@supports not (height: clamp( 0.3125rem , 0.1056034483rem  +  1.0344827586vw , 1.25rem )) {
+@supports not (height: clamp( 0.3125rem , -0.0171703297rem  +  1.6483516484vw , 1.25rem )) {
     .footer__list-item::before {
-      height: calc(0.3125rem + 0.9375 * (100vw - 20rem) / 90.625);
+      height: calc(0.3125rem + 0.9375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.625rem , 0.1560344828rem  +  2.3448275862vw , 2.75rem )) {
+@supports (font-size: clamp( 0.625rem , 0.3612637363rem  +  1.3186813187vw , 1.375rem )) {
     .footer__subtitle {
-      font-size: clamp( 0.625rem , 0.1560344828rem  +  2.3448275862vw , 2.75rem );
+      font-size: clamp( 0.625rem , 0.3612637363rem  +  1.3186813187vw , 1.375rem );
     }
 }
 
-@supports not (font-size: clamp( 0.625rem , 0.1560344828rem  +  2.3448275862vw , 2.75rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.3612637363rem  +  1.3186813187vw , 1.375rem )) {
     .footer__subtitle {
-      font-size: calc(0.625rem + 2.125 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.625rem + 0.75 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 0.9375rem , 0.4547413793rem  +  2.4137931034vw , 3.125rem )) {
+@supports (margin-bottom: clamp( 0.9375rem , 0.3880494505rem  +  2.7472527473vw , 2.5rem )) {
     .footer__subtitle {
-      margin-bottom: clamp( 0.9375rem , 0.4547413793rem  +  2.4137931034vw , 3.125rem );
+      margin-bottom: clamp( 0.9375rem , 0.3880494505rem  +  2.7472527473vw , 2.5rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 0.9375rem , 0.4547413793rem  +  2.4137931034vw , 3.125rem )) {
+@supports not (margin-bottom: clamp( 0.9375rem , 0.3880494505rem  +  2.7472527473vw , 2.5rem )) {
     .footer__subtitle {
-      margin-bottom: calc(0.9375rem + 2.1875 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (gap: clamp( 0.9375rem , 0.1788793103rem  +  3.7931034483vw , 4.375rem )) {
+@supports (gap: clamp( 0.9375rem , 0.4979395604rem  +  2.1978021978vw , 2.1875rem )) {
     .footer__items {
-      gap: clamp( 0.9375rem , 0.1788793103rem  +  3.7931034483vw , 4.375rem );
+      gap: clamp( 0.9375rem , 0.4979395604rem  +  2.1978021978vw , 2.1875rem );
     }
 }
 
-@supports not (gap: clamp( 0.9375rem , 0.1788793103rem  +  3.7931034483vw , 4.375rem )) {
+@supports not (gap: clamp( 0.9375rem , 0.4979395604rem  +  2.1978021978vw , 2.1875rem )) {
     .footer__items {
-      gap: calc(0.9375rem + 3.4375 * (100vw - 20rem) / 90.625);
+      gap: calc(0.9375rem + 1.25 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 1.5625rem , 0.8728448276rem  +  3.4482758621vw , 4.6875rem )) {
+@supports (margin-bottom: clamp( 1.5625rem , 0.9031593407rem  +  3.2967032967vw , 3.4375rem )) {
     .footer__items {
-      margin-bottom: clamp( 1.5625rem , 0.8728448276rem  +  3.4482758621vw , 4.6875rem );
+      margin-bottom: clamp( 1.5625rem , 0.9031593407rem  +  3.2967032967vw , 3.4375rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.5625rem , 0.8728448276rem  +  3.4482758621vw , 4.6875rem )) {
+@supports not (margin-bottom: clamp( 1.5625rem , 0.9031593407rem  +  3.2967032967vw , 3.4375rem )) {
     .footer__items {
-      margin-bottom: calc(1.5625rem + 3.125 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(1.5625rem + 1.875 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (max-width: clamp( 2.1875rem , 0.8771551724rem  +  6.5517241379vw , 8.125rem )) {
+@supports (max-width: clamp( 1.5625rem , 0.7932692308rem  +  3.8461538462vw , 3.75rem )) {
     .footer__item-num {
-      max-width: clamp( 2.1875rem , 0.8771551724rem  +  6.5517241379vw , 8.125rem );
+      max-width: clamp( 1.5625rem , 0.7932692308rem  +  3.8461538462vw , 3.75rem );
     }
 }
 
-@supports not (max-width: clamp( 2.1875rem , 0.8771551724rem  +  6.5517241379vw , 8.125rem )) {
+@supports not (max-width: clamp( 1.5625rem , 0.7932692308rem  +  3.8461538462vw , 3.75rem )) {
     .footer__item-num {
-      max-width: calc(2.1875rem + 5.9375 * (100vw - 20rem) / 90.625);
+      max-width: calc(1.5625rem + 2.1875 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.4603448276rem  +  1.4482758621vw , 2.0625rem )) {
+@supports (font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem )) {
     .footer__item-text {
-      font-size: clamp( 0.75rem , 0.4603448276rem  +  1.4482758621vw , 2.0625rem );
+      font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.4603448276rem  +  1.4482758621vw , 2.0625rem )) {
+@supports not (font-size: clamp( 0.75rem , 0.6181318681rem  +  0.6593406593vw , 1.125rem )) {
     .footer__item-text {
-      font-size: calc(0.75rem + 1.3125 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.75rem + 0.375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.6875rem , 0.2875rem  +  2vw , 2.5rem )) {
+@supports (font-size: clamp( 0.6875rem , 0.4896978022rem  +  0.989010989vw , 1.25rem )) {
     .footer__link {
-      font-size: clamp( 0.6875rem , 0.2875rem  +  2vw , 2.5rem );
+      font-size: clamp( 0.6875rem , 0.4896978022rem  +  0.989010989vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 0.6875rem , 0.2875rem  +  2vw , 2.5rem )) {
+@supports not (font-size: clamp( 0.6875rem , 0.4896978022rem  +  0.989010989vw , 1.25rem )) {
     .footer__link {
-      font-size: calc(0.6875rem + 1.8125 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.6875rem + 0.5625 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (max-width: clamp( 1.875rem , 0.6336206897rem  +  6.2068965517vw , 7.5rem )) {
+@supports (max-width: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) {
     .footer__link svg {
-      max-width: clamp( 1.875rem , 0.6336206897rem  +  6.2068965517vw , 7.5rem );
+      max-width: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem );
     }
 }
 
-@supports not (max-width: clamp( 1.875rem , 0.6336206897rem  +  6.2068965517vw , 7.5rem )) {
+@supports not (max-width: clamp( 1.25rem , 0.8104395604rem  +  2.1978021978vw , 2.5rem )) {
     .footer__link svg {
-      max-width: calc(1.875rem + 5.625 * (100vw - 20rem) / 90.625);
+      max-width: calc(1.25rem + 1.25 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.5603448276rem  +  3.4482758621vw , 4.375rem )) {
+@supports (margin-bottom: clamp( 1.25rem , 0.1510989011rem  +  5.4945054945vw , 4.375rem )) {
     .promo__info {
-      margin-bottom: clamp( 1.25rem , 0.5603448276rem  +  3.4482758621vw , 4.375rem );
+      margin-bottom: clamp( 1.25rem , 0.1510989011rem  +  5.4945054945vw , 4.375rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 0.5603448276rem  +  3.4482758621vw , 4.375rem )) {
+@supports not (margin-bottom: clamp( 1.25rem , 0.1510989011rem  +  5.4945054945vw , 4.375rem )) {
     .promo__info {
-      margin-bottom: calc(1.25rem + 3.125 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(1.25rem + 3.125 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 1.4375rem , 0.5685344828rem  +  4.3448275862vw , 5.375rem )) {
+@supports (font-size: clamp( 1.4375rem , 0.9979395604rem  +  2.1978021978vw , 2.6875rem )) {
     .promo__title {
-      font-size: clamp( 1.4375rem , 0.5685344828rem  +  4.3448275862vw , 5.375rem );
+      font-size: clamp( 1.4375rem , 0.9979395604rem  +  2.1978021978vw , 2.6875rem );
     }
 }
 
-@supports not (font-size: clamp( 1.4375rem , 0.5685344828rem  +  4.3448275862vw , 5.375rem )) {
+@supports not (font-size: clamp( 1.4375rem , 0.9979395604rem  +  2.1978021978vw , 2.6875rem )) {
     .promo__title {
-      font-size: calc(1.4375rem + 3.9375 * (100vw - 20rem) / 90.625);
+      font-size: calc(1.4375rem + 1.25 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 0.625rem , -0.2025862069rem  +  4.1379310345vw , 4.375rem )) {
+@supports (margin-bottom: clamp( 0.625rem , -0.2541208791rem  +  4.3956043956vw , 3.125rem )) {
     .promo__title {
-      margin-bottom: clamp( 0.625rem , -0.2025862069rem  +  4.1379310345vw , 4.375rem );
+      margin-bottom: clamp( 0.625rem , -0.2541208791rem  +  4.3956043956vw , 3.125rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 0.625rem , -0.2025862069rem  +  4.1379310345vw , 4.375rem )) {
+@supports not (margin-bottom: clamp( 0.625rem , -0.2541208791rem  +  4.3956043956vw , 3.125rem )) {
     .promo__title {
-      margin-bottom: calc(0.625rem + 3.75 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(0.625rem + 2.5 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (gap: clamp( 0.625rem , 0.0732758621rem  +  2.7586206897vw , 3.125rem )) {
+@supports (gap: clamp( 0.625rem , 0.1854395604rem  +  2.1978021978vw , 1.875rem )) {
     .promo__texts {
-      gap: clamp( 0.625rem , 0.0732758621rem  +  2.7586206897vw , 3.125rem );
+      gap: clamp( 0.625rem , 0.1854395604rem  +  2.1978021978vw , 1.875rem );
     }
 }
 
-@supports not (gap: clamp( 0.625rem , 0.0732758621rem  +  2.7586206897vw , 3.125rem )) {
+@supports not (gap: clamp( 0.625rem , 0.1854395604rem  +  2.1978021978vw , 1.875rem )) {
     .promo__texts {
-      gap: calc(0.625rem + 2.5 * (100vw - 20rem) / 90.625);
+      gap: calc(0.625rem + 1.25 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.6875rem , 0.3840517241rem  +  1.5172413793vw , 2.0625rem )) {
+@supports (font-size: clamp( 0.6875rem , 0.5776098901rem  +  0.5494505495vw , 1rem )) {
     .promo__text {
-      font-size: clamp( 0.6875rem , 0.3840517241rem  +  1.5172413793vw , 2.0625rem );
+      font-size: clamp( 0.6875rem , 0.5776098901rem  +  0.5494505495vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.6875rem , 0.3840517241rem  +  1.5172413793vw , 2.0625rem )) {
+@supports not (font-size: clamp( 0.6875rem , 0.5776098901rem  +  0.5494505495vw , 1rem )) {
     .promo__text {
-      font-size: calc(0.6875rem + 1.375 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.6875rem + 0.3125 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.5625rem , 0.3280172414rem  +  1.1724137931vw , 1.625rem )) {
+@supports (font-size: clamp( 0.5625rem , 0.4086538462rem  +  0.7692307692vw , 1rem )) {
     .promo__block-name {
-      font-size: clamp( 0.5625rem , 0.3280172414rem  +  1.1724137931vw , 1.625rem );
+      font-size: clamp( 0.5625rem , 0.4086538462rem  +  0.7692307692vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.5625rem , 0.3280172414rem  +  1.1724137931vw , 1.625rem )) {
+@supports not (font-size: clamp( 0.5625rem , 0.4086538462rem  +  0.7692307692vw , 1rem )) {
     .promo__block-name {
-      font-size: calc(0.5625rem + 1.0625 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.5625rem + 0.4375 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (font-size: clamp( 0.3125rem , 0.1745689655rem  +  0.6896551724vw , 0.9375rem )) {
+@supports (font-size: clamp( 0.3125rem , 0.2026098901rem  +  0.5494505495vw , 0.625rem )) {
     .promo__block-text {
-      font-size: clamp( 0.3125rem , 0.1745689655rem  +  0.6896551724vw , 0.9375rem );
+      font-size: clamp( 0.3125rem , 0.2026098901rem  +  0.5494505495vw , 0.625rem );
     }
 }
 
-@supports not (font-size: clamp( 0.3125rem , 0.1745689655rem  +  0.6896551724vw , 0.9375rem )) {
+@supports not (font-size: clamp( 0.3125rem , 0.2026098901rem  +  0.5494505495vw , 0.625rem )) {
     .promo__block-text {
-      font-size: calc(0.3125rem + 0.625 * (100vw - 20rem) / 90.625);
+      font-size: calc(0.3125rem + 0.3125 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.4224137931rem  +  4.1379310345vw , 5rem )) {
+@supports (margin-bottom: clamp( 1.25rem , -0.0686813187rem  +  6.5934065934vw , 5rem )) {
     .lessons {
-      margin-bottom: clamp( 1.25rem , 0.4224137931rem  +  4.1379310345vw , 5rem );
+      margin-bottom: clamp( 1.25rem , -0.0686813187rem  +  6.5934065934vw , 5rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 0.4224137931rem  +  4.1379310345vw , 5rem )) {
+@supports not (margin-bottom: clamp( 1.25rem , -0.0686813187rem  +  6.5934065934vw , 5rem )) {
     .lessons {
-      margin-bottom: calc(1.25rem + 3.75 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(1.25rem + 3.75 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem )) {
+@supports (margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem )) {
     .lessons__items {
-      margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem );
+      margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem )) {
+@supports not (margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem )) {
     .lessons__items {
-      margin-bottom: calc(1.25rem + 2.1875 * (100vw - 20rem) / 90.625);
+      margin-bottom: calc(1.25rem + 1.5625 * (100vw - 20rem) / 56.875);
     }
 }
 
-@supports (margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem )) {
-    .lessons__plus {
-      margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem )) {
-    .lessons__plus {
-      margin-bottom: calc(1.25rem + 2.1875 * (100vw - 20rem) / 90.625);
-    }
-}
-
-@supports (font-size: clamp( 1.375rem , 0.575rem  +  4vw , 5rem )) {
-    .lessons__subtitle {
-      font-size: clamp( 1.375rem , 0.575rem  +  4vw , 5rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.375rem , 0.575rem  +  4vw , 5rem )) {
-    .lessons__subtitle {
-      font-size: calc(1.375rem + 3.625 * (100vw - 20rem) / 90.625);
-    }
-}
-
-@supports (margin-bottom: clamp( 0.9375rem , 0.7306034483rem  +  1.0344827586vw , 1.875rem )) {
-    .lessons__subtitle {
-      margin-bottom: clamp( 0.9375rem , 0.7306034483rem  +  1.0344827586vw , 1.875rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 0.9375rem , 0.7306034483rem  +  1.0344827586vw , 1.875rem )) {
-    .lessons__subtitle {
-      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 90.625);
-    }
-}
-
-@supports (max-width: clamp( 2.5rem , -0.5344827586rem  +  15.1724137931vw , 16.25rem )) {
-    .lessons__subtitle img {
-      max-width: clamp( 2.5rem , -0.5344827586rem  +  15.1724137931vw , 16.25rem );
-    }
-}
-
-@supports not (max-width: clamp( 2.5rem , -0.5344827586rem  +  15.1724137931vw , 16.25rem )) {
-    .lessons__subtitle img {
-      max-width: calc(2.5rem + 13.75 * (100vw - 20rem) / 90.625);
-    }
-}
-
-@supports (gap: clamp( 1.25rem , -1.0948275862rem  +  11.724137931vw , 11.875rem )) {
-    .lessons__books {
-      gap: clamp( 1.25rem , -1.0948275862rem  +  11.724137931vw , 11.875rem );
-    }
-}
-
-@supports not (gap: clamp( 1.25rem , -1.0948275862rem  +  11.724137931vw , 11.875rem )) {
-    .lessons__books {
-      gap: calc(1.25rem + 10.625 * (100vw - 20rem) / 90.625);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem )) {
-    .lessons__books {
-      margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.25rem , 0.7672413793rem  +  2.4137931034vw , 3.4375rem )) {
-    .lessons__books {
-      margin-bottom: calc(1.25rem + 2.1875 * (100vw - 20rem) / 90.625);
-    }
-}
-
-@supports (font-size: clamp( 1rem , 0.5310344828rem  +  2.3448275862vw , 3.125rem )) {
-    .lessons__subtext {
-      font-size: clamp( 1rem , 0.5310344828rem  +  2.3448275862vw , 3.125rem );
-    }
-}
-
-@supports not (font-size: clamp( 1rem , 0.5310344828rem  +  2.3448275862vw , 3.125rem )) {
-    .lessons__subtext {
-      font-size: calc(1rem + 2.125 * (100vw - 20rem) / 90.625);
-    }
-}
-}
-
-@media (min-width: 61.99875em) and (max-width: 110.625em) {
-@supports (gap: clamp( 1.25rem , -6.7187861495rem  +  12.8531400221vw , 7.5rem )) {
-    .footer__links {
-      gap: clamp( 1.25rem , -6.7187861495rem  +  12.8531400221vw , 7.5rem );
-    }
-}
-
-@supports not (gap: clamp( 1.25rem , -6.7187861495rem  +  12.8531400221vw , 7.5rem )) {
-    .footer__links {
-      gap: calc(1.25rem + 6.25 * (100vw - 61.99875rem) / 48.62625);
-    }
-}
-
-@supports (font-size: clamp( 1.875rem , -0.5156358448rem  +  3.8559420066vw , 3.75rem )) {
+@supports (font-size: clamp( 0.75rem , 0.3543956044rem  +  1.978021978vw , 1.875rem )) {
     .lessons__item-text {
-      font-size: clamp( 1.875rem , -0.5156358448rem  +  3.8559420066vw , 3.75rem );
+      font-size: clamp( 0.75rem , 0.3543956044rem  +  1.978021978vw , 1.875rem );
     }
 }
 
-@supports not (font-size: clamp( 1.875rem , -0.5156358448rem  +  3.8559420066vw , 3.75rem )) {
+@supports not (font-size: clamp( 0.75rem , 0.3543956044rem  +  1.978021978vw , 1.875rem )) {
     .lessons__item-text {
-      font-size: calc(1.875rem + 1.875 * (100vw - 61.99875rem) / 48.62625);
+      font-size: calc(0.75rem + 1.125 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem )) {
+    .lessons__plus {
+      margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem )) {
+    .lessons__plus {
+      margin-bottom: calc(1.25rem + 1.5625 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.4725274725rem  +  2.6373626374vw , 2.5rem )) {
+    .lessons__subtitle {
+      font-size: clamp( 1rem , 0.4725274725rem  +  2.6373626374vw , 2.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.4725274725rem  +  2.6373626374vw , 2.5rem )) {
+    .lessons__subtitle {
+      font-size: calc(1rem + 1.5 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.6078296703rem  +  1.6483516484vw , 1.875rem )) {
+    .lessons__subtitle {
+      margin-bottom: clamp( 0.9375rem , 0.6078296703rem  +  1.6483516484vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.6078296703rem  +  1.6483516484vw , 1.875rem )) {
+    .lessons__subtitle {
+      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (max-width: clamp( 1.875rem , -0.3228021978rem  +  10.989010989vw , 8.125rem )) {
+    .lessons__subtitle img {
+      max-width: clamp( 1.875rem , -0.3228021978rem  +  10.989010989vw , 8.125rem );
+    }
+}
+
+@supports not (max-width: clamp( 1.875rem , -0.3228021978rem  +  10.989010989vw , 8.125rem )) {
+    .lessons__subtitle img {
+      max-width: calc(1.875rem + 6.25 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (gap: clamp( 1.25rem , -0.0686813187rem  +  6.5934065934vw , 5rem )) {
+    .lessons__books {
+      gap: clamp( 1.25rem , -0.0686813187rem  +  6.5934065934vw , 5rem );
+    }
+}
+
+@supports not (gap: clamp( 1.25rem , -0.0686813187rem  +  6.5934065934vw , 5rem )) {
+    .lessons__books {
+      gap: calc(1.25rem + 3.75 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem )) {
+    .lessons__books {
+      margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 0.7005494505rem  +  2.7472527473vw , 2.8125rem )) {
+    .lessons__books {
+      margin-bottom: calc(1.25rem + 1.5625 * (100vw - 20rem) / 56.875);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.4642857143rem  +  1.4285714286vw , 1.5625rem )) {
+    .lessons__subtext {
+      font-size: clamp( 0.75rem , 0.4642857143rem  +  1.4285714286vw , 1.5625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.4642857143rem  +  1.4285714286vw , 1.5625rem )) {
+    .lessons__subtext {
+      font-size: calc(0.75rem + 0.8125 * (100vw - 20rem) / 56.875);
     }
 }
 }
 
-@media (min-width: 20em) and (max-width: 93.74875em) {
-@supports (margin-right: clamp( -8.75rem , 2.3729216544rem  +  -11.8646079595vw , 0.0000000625rem )) {
-    .promo__images {
-      margin-right: clamp( -8.75rem , 2.3729216544rem  +  -11.8646079595vw , 0.0000000625rem );
+@media (min-width: 61.99875em) and (max-width: 76.875em) {
+@supports (gap: clamp( 1.25rem , -9.16908243rem  +  16.8053104781vw , 3.75rem )) {
+    .footer__links {
+      gap: clamp( 1.25rem , -9.16908243rem  +  16.8053104781vw , 3.75rem );
     }
 }
 
-@supports not (margin-right: clamp( -8.75rem , 2.3729216544rem  +  -11.8646079595vw , 0.0000000625rem )) {
+@supports not (gap: clamp( 1.25rem , -9.16908243rem  +  16.8053104781vw , 3.75rem )) {
+    .footer__links {
+      gap: calc(1.25rem + 2.5 * (100vw - 61.99875rem) / 14.87625);
+    }
+}
+
+@supports (gap: clamp( 1.25rem , -11.7738530376rem  +  21.0066380976vw , 4.375rem )) {
+    .promo__blocks {
+      gap: clamp( 1.25rem , -11.7738530376rem  +  21.0066380976vw , 4.375rem );
+    }
+}
+
+@supports not (gap: clamp( 1.25rem , -11.7738530376rem  +  21.0066380976vw , 4.375rem )) {
+    .promo__blocks {
+      gap: calc(1.25rem + 3.125 * (100vw - 61.99875rem) / 14.87625);
+    }
+}
+}
+
+@media (min-width: 56.24875em) and (max-width: 76.875em) {
+@supports (margin-right: clamp( -4.6875rem , 12.7830323219rem  +  -22.7258957033vw , 0.0000000625rem )) {
     .promo__images {
-      margin-right: calc(0.0000000625rem + -8.7500000625 * (100vw - 20rem) / 73.74875);
+      margin-right: clamp( -4.6875rem , 12.7830323219rem  +  -22.7258957033vw , 0.0000000625rem );
+    }
+}
+
+@supports not (margin-right: clamp( -4.6875rem , 12.7830323219rem  +  -22.7258957033vw , 0.0000000625rem )) {
+    .promo__images {
+      margin-right: calc(0.0000000625rem + -4.6875000625 * (100vw - 56.24875rem) / 20.62625);
     }
 }
 }
 
 .webp .wrapper .page{ background-image: url(../img/bg.webp); }
 
-@media (max-width: 74.99875em){
+@media (max-width: 56.24875em){
 
-  .webp .promo{ background: url(../img/bg-mob.webp) top right/75% 55% no-repeat; }
+  .webp .promo{ background: url(../img/bg-mob.webp) top right/75% 82% no-repeat; }
 }
 
 @media (max-width: 47.99875em){
